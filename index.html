@@ -2,6 +2,461 @@
 layout: default
 ---
 
-<div id="master_container">
-	<div id="map"></div>
+<div id="body_cont">
+    <div id="top_cont">
+        <h1><span class="green">eGallon:</span> Compare the costs of <span class="green">driving</span> with <span class="green">electricity</span></h1> 
+    </div>
+    
+    <div id="left_cont">
+        <div id="pump" class="left_text">
+            <h2>What is eGallon?</h2>
+            <p id="ptop">It is the cost of fueling a vehicle with electricity compared to a similar vehicle that runs on gasoline.</p>
+        </div>
+        <div id="gauge" class="left_text">
+            <h2>Did you know?</h2>
+            <p>On average, it costs about half as much to drive an electric vehicle.</p>
+        </div>
+    </div>
+
+    <div id="right_cont">
+        <div id="right_text">
+            <h3>Find out how much it costs to fuel an electric vehicle in your state</h3>
+
+            <select id="mySelect"></select>
+        </div>
+        <div class="price">
+            <div class="price_text">
+                <p>regular gasoline</p>
+            </div>
+            <div class="subprice">
+                <ul class="flip minutePlay">
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow">
+                                    <div class="line"></div>
+                                    <div class="side le"></div>
+                                    <div class="side ri"></div>
+                                </div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">6</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">4</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">1</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow">
+                                    <div class="line"></div>
+                                    <div class="side le"></div>
+                                    <div class="side ri"></div>
+                                    
+                                </div>
+                                <div id="onestG" class="inn">3</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="decimal">&middot;</div>
+                <ul class="flip secondPlay">
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">2</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">4</div>
+                            </div>
+                        </a>
+                    </li>
+                            <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">8</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div id="tenthstG" class="inn">6</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="flip milliPlay">
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">8</div>
+                            </div>
+                        </a>
+                    </li>
+                            <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">9</div>
+                            </div>
+                        </a>
+                    </li>
+                            <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">2</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">3</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">5</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div id="hundrethstG" class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div id="price2" class="price">
+            <div class="price_text">
+                <p>electric eGallon</p>
+            </div>
+            <div class="subprice">
+                <ul class="flip minutePlay2">
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">4</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">1</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">7</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">2</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">3</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div id="onestE" class="inn">3</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="decimal">&middot;</div>
+                <ul class="flip secondPlay2">
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">4</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">2</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                            <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">4</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div id="tenthstE" class="inn">6</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="flip milliPlay2">
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">8</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">5</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">9</div>
+                            </div>
+                        </a>
+                    </li>
+                            <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">1</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div class="inn">5</div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="up">
+                                <div class="shadow"><div class="line"></div>
+                            <div class="side le"></div>
+                                    <div class="side ri"></div></div>
+                                <div id="hundrethstE" class="inn">0</div>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+ <div id="fold">
+            <a href="https://energy.gov/"><img src="img/fold.png"></a>
+        </div>
+    </div>
+               <div id="bottom_right">
+            <a href="https://energy.gov/node/658271">Data and Methodology</a><br>
+            <p>Updated: <span id="date">December 25, 2005</span></p>
+        </div>
 </div>
