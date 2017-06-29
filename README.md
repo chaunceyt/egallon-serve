@@ -25,14 +25,16 @@ A weekly report of this data is emailed to Atiq Warriach and Ernest Ambrose to e
 To provide weekly data updates to eGallon, follow these steps
 1. Download latest json from https://energy.gov/api/egallon/current/combined.json
 2. Replace current `js/combined.json` file with the above latest combined.json file. 
-3. Check to make sure all updates are reflected on energy.gov/egallon
+3. Push update to production (gh-pages branch)
+4. Check to make sure all updates are reflected on energy.gov/egallon
 
-### How to re-integrate automatically updated data
-1. 
-	
-	$.getJSON("js/combined.json",function(result){
-	    // When CORS is enabled on energy.gov allowing energyapps.github.io access, uncomment the below
-	    // $.getJSON("https://energy.gov/api/egallon/current/combined.json",function(result){
+### How to re-integrate automatically updated data (requires CORS enabled)
+When CORS is enabled for energyapps.github.io on energy.gov/api, do the following
+1. Open `js/script.js`
+2. Locate the following line of code: `$.getJSON("js/combined.json",function(result){`
+3. Replace it with `$.getJSON("https://energy.gov/api/egallon/current/combined.json",function(result){`
+4. Push update to production (gh-pages branch)
+	    
 
 
 
