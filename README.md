@@ -15,6 +15,7 @@ More articles:
 ## Data
 The most important part of this is knowing where the data is from, and how it is collated. All of the data is from EIA. The electricity data is updated on a monthly basis and can be found in tabular form [here](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_06_a). The gasoline is updated on a weekly basis but is not present for every state, therefore some states are grouped by region. It can be found [here](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_06_a). Both sets of data are gathered from the EIA API using a script on energy.gov's servers ([electricity price](https://www.eia.gov/opendata/qb.php?category=1012), [gas price](https://www.eia.gov/opendata/qb.php?category=240691)). This script runs weekly and the resulting data can be found at https://energy.gov/api/egallon/current/combined.json.
 
+**NOTE**: At the time being, the javascript at `js/script.js` references a local version of the data from `js/combined.json` rather than from https://energy.gov/api/egallon/current/combined.json. This is due to energy.gov/api needing to allow energyapps.github.io as an allowable origin for cross-domain serving. This is in progress of being resolved!
 
 ## CSS
 The css stuff is heavily modified but one essential part is based on [this countdown clock](https://codepen.io/ademilter/pen/czIGo). 
