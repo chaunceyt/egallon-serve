@@ -1,89 +1,25 @@
 ## About
+This repo is the [app_frame/jekyll/pym version](https://github.com/energyapps/app_frame) of something that was built in 2013. The original repo is found [here](https://github.com/energyapps/egallon). 
 
-This is a codebase that will allow energy.gov users to quickly get started developing new graphics and maps. By cloning this repo, you can immidiately begin coding. 
+**IMPORTANT: When editing the gh-pages branch of this repository, you will be editing the content that lives at energy.gov/egallon.**
 
-If you're working with [Foundation](http://foundation.zurb.com/) responsive framework, pull down [the App_Frame_Foundation repository](https://github.com/energyapps/app-frame-foundation). Note: Its a big work in progress, and a lot of the CSS will interfere with energy.gov's default css. So don't use it right now.
+## Background information
+Read the blogs if you're curious about how this came into being. The cms map itself is located [here](https://energy.gov/maps/egallon).
 
-## Dependencies
-- Git (obviously)
-- Download and install [Jekyll](http://jekyllrb.com/)
+Read about it [here](https://energy.gov/eere/electricvehicles/saving-fuel-and-vehicle-costs) and the methodology can be found [here](https://energy.gov/downloads/egallon-methodology).
 
-## Setup
+More articles:
+- https://energy.gov/articles/egallon-how-much-cheaper-it-drive-electricity
+- https://energy.gov/articles/egallon-what-it-and-why-it-s-important
+- https://energy.gov/articles/ev-sales-skyrocketing-egallon-holds-steady
+- https://energy.gov/articles/egallon-and-electric-vehicle-sales-big-picture
 
-- Before Getting started, ask Dan to create a new repo in the [EnergyApps Github group](https://github.com/energyapps) and give you editing permissions. Or alternatively, you can create this repo on your own account.
+## Data
+The most important part of this is knowing where the data is from, and how it is collated. All of the data is from EIA. The electricity data is updated on a monthly basis and can be found in tabular form [here](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_06_a). The gasoline is updated on a weekly basis but is not present for every state, therefore some states are grouped by region. It can be found [here](https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_06_a). Both sets of data are gathered from the EIA API using a script on energy.gov's servers ([electricity price](https://www.eia.gov/opendata/qb.php?category=1012), [gas price](https://www.eia.gov/opendata/qb.php?category=240691)). This script runs weekly and the resulting data can be found at https://energy.gov/api/egallon/current/combined.json.
 
-- In your local directory Clone the App Frame repo:
+A weekly report of this data is emailed to Atiq Warriach and Ernest Ambrose to ensure that it is working properly. If they do not receive it, something is wrong. 
 
-`git clone https://github.com/energyapps/app_frame.git`
+**NOTE**: At the time being, the javascript at `js/script.js` references a local version of the data from `js/combined.json` rather than from https://energy.gov/api/egallon/current/combined.json. This is due to energy.gov/api needing to allow energyapps.github.io as an allowable origin for cross-domain serving. We are working to resolve this through a CORS module addition to the energy.gov drupal platform. Ticket is in Chauncey's hands. 
 
-- Rename the folder to your project name
-
-`mv app_frame/ new_directory_name/`
-
-- cd into that folder in terminal and change remote URL to new repo:
-
-`git remote -v` List all remote urls
-
-`git remote set-url origin https://github.com/energyapps/NEW-REPO-NAME.git` -changes the remote url to your new URL
-
-- Push to this new repo
-
-`git push -u origin master`
-
-- Branch out the gh-pages branch
-
-`git branch gh-pages`
-`git checkout gh-pages`
-`git push origin gh-pages`
-
-- At this point you may want to go into your repo on github and change the "default branch" to gh-pages in the settings.
-
-- Begin work in the `index.html` file.
-- Build the Jekyll `_site/` folder by running `jekyll build` in your directory. I recommend running `jekyll build --watch`, which automatically rebuilds your `_site` folder whenever you change something in the directory.
-- Run the jekyll server by running `jekyll serve`. You can now see your page at [](http://localhost:4000/)
-- Push changes to github, see website running remotely at energyapps.github.io/NEW-REPO-NAME/index.html
-- Recommended: Update Readme to reflect your current project.
-
-## Contents
-
-1. 	root directory
-	* README.md 
-		- You are here.
-	* index.html 
-		- Merges in the markup from the post (see below) and contains the styles from the energy.gov/maps section.
-	* article.html
-		- Merges in the markup from the post (see below) and contains the styles from the energy.gov/articles section.
-2.	_posts/
-	* Contains the markup that you are creating. This goes beneath header info. It will be merged into the index and article above.
-3.	_layout/
-	* The _layouts/ folder is the Jekyll folder that contains layouts for any type of page within a jekyll site. 
-	* default.html
-		- This is a very rough cannibalization of the DOM elements in energy.gov/maps element.
-		- Markup, CSS, and JS are merged here automatically by Jekyll, though you may need to update the links based on the js and css pages you create (below).
-		- Contains links to JS, CSS in other folders (see below), as well as links to external energy.gov css files.
-4.	_site/
-	* This is the folder that is generated by Jekyll and holds the merged static webpages.
-5. js/
-	* data.js
-		- Data for the map in json objects. This would be added to the maps content type.
-	* script.js
-		- script that executes all commands on graphic. This would be added to the maps content type.
-6. css/
-	* style.css
-		- custom css to be added to map. CSS that would be added to the maps content type.
-	* master_style.css
-		- A static copy of the above as a fallback when the energy.gov links break.
-	* fonts.css
-		- a collection of some commonly used energy.gov fonts
-
-## Needs/Ideal Work flow
-
-	- You will create your content in index.html, data.js, script.js, and style.css.
-	- These files will then be merged into the default.html using Jekyll pages.
-	- When you create your map on cms.doe.gov or stage.cms.doe.gov you will have to copy your js, css, and html over. Or, if you use the upload option, you will have to make sure that your index.html has the jekyll code removed.
-	
-## Notes
-
-Public Domain
-
-### Updated: 2/23/15
+## CSS
+The css stuff is heavily modified but one essential part is based on [this countdown clock](https://codepen.io/ademilter/pen/czIGo). 
