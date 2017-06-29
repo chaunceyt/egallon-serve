@@ -1,5 +1,5 @@
 ## About
-This repo is the [app_frame/jekyll/pym version](https://github.com/energyapps/app_frame) of something that was built in 2013. The original repo is found [here](https://github.com/energyapps/egallon). 
+This repo is the [app_frame/jekyll/pym version](https://github.com/energyapps/app_frame) of something that was built in 2013. The original repo is found [here](https://github.com/energyapps/egallon-old). 
 
 **IMPORTANT: When editing the gh-pages branch of this repository, you will be editing the content that lives at energy.gov/egallon.**
 
