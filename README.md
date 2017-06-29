@@ -21,5 +21,11 @@ A weekly report of this data is emailed to Atiq Warriach and Ernest Ambrose to e
 
 **NOTE**: At the time being, the javascript at `js/script.js` references a local version of the data from `js/combined.json` rather than from https://energy.gov/api/egallon/current/combined.json. This is due to energy.gov/api needing to allow energyapps.github.io as an allowable origin for cross-domain serving. We are working to resolve this through a CORS module addition to the energy.gov drupal platform. Ticket is in Chauncey's hands. 
 
+### Temporary workaround for updating data
+To provide weekly data updates to eGallon, follow these steps
+1. Download latest json from https://energy.gov/api/egallon/current/combined.json
+2. Replace current `js/combined.json` file with the above latest combined.json file. 
+3. Check to make sure all updates are reflected on energy.gov/egallon
+
 ## CSS
 The css stuff is heavily modified but one essential part is based on [this countdown clock](https://codepen.io/ademilter/pen/czIGo). 
