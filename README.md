@@ -27,5 +27,14 @@ To provide weekly data updates to eGallon, follow these steps
 2. Replace current `js/combined.json` file with the above latest combined.json file. 
 3. Check to make sure all updates are reflected on energy.gov/egallon
 
+### How to re-integrate automatically updated data
+1. 
+	
+	$.getJSON("js/combined.json",function(result){
+	    // When CORS is enabled on energy.gov allowing energyapps.github.io access, uncomment the below
+	    // $.getJSON("https://energy.gov/api/egallon/current/combined.json",function(result){
+
+
+
 ## CSS
 The css stuff is heavily modified but one essential part is based on [this countdown clock](https://codepen.io/ademilter/pen/czIGo). 

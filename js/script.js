@@ -15,8 +15,8 @@ for (var i = 0; i<loop2.length; i++) {
 (function ($) { 
 	$(document).ready(function(){
 	    $.getJSON("js/combined.json",function(result){
-	    // $.getJSON("/api/egallon/current/combined.json",function(result){
-        // $.getJSON("http://energy.gov/egallon-json/current/combined.json",function(result){
+	    // When CORS is enabled on energy.gov allowing energyapps.github.io access, uncomment the below
+	    // $.getJSON("https://energy.gov/api/egallon/current/combined.json",function(result){
 
 		    var mySelect = $('#mySelect');
             $.each(result['states'], function(i, field){
