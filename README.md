@@ -21,7 +21,7 @@ A weekly report of this data is emailed to Atiq Warriach and Ernest Ambrose to e
 
 **NOTE**: At the time being, the javascript at `js/script.js` references a local version of the data from `js/combined.json` rather than from https://energy.gov/api/egallon/current/combined.json. This is due to energy.gov/api needing to allow energyapps.github.io as an allowable origin for cross-domain serving. We are working to resolve this through a CORS module addition to the energy.gov drupal platform. Ticket is in Chauncey's hands. 
 
-### Temporary workaround for updating data
+### Temporary workaround for updating data on egallon
 To provide weekly data updates to eGallon, follow these steps
 1. Download latest json from https://energy.gov/api/egallon/current/combined.json
 2. Replace current `js/combined.json` file with the above latest combined.json file. 
@@ -35,8 +35,8 @@ When CORS is enabled for energyapps.github.io on energy.gov/api, do the followin
 3. Replace it with `$.getJSON("https://energy.gov/api/egallon/current/combined.json",function(result){`
 4. Push update to production (gh-pages branch)
 	    
-
-
+## About the Script.
+The eGallon data is updated automatically and served at https://energy.gov/api/egallon/current/combined.json. This is achieved through a jenkins job scraping the above data sources once a week, and then adding it to our server. Though this is hosted privately, it is similar in setup to [this utilities scraper](https://github.com/energyapps/utilities_data_processor). Questions on the location and functionality of the scraper should be addressde to Chauncey. 
 
 ## CSS
 The css stuff is heavily modified but one essential part is based on [this countdown clock](https://codepen.io/ademilter/pen/czIGo). 
