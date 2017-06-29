@@ -1,5 +1,7 @@
 ## About
-This repo is the [app_frame/jekyll/pym version](https://github.com/energyapps/app_frame) of something that was built in 2013. The original repo is found [here](https://github.com/energyapps/egallon). **When editing the gh-pages branch of this repository, you will be editing the content that lives at energy.gov/egallon.**
+This repo is the [app_frame/jekyll/pym version](https://github.com/energyapps/app_frame) of something that was built in 2013. The original repo is found [here](https://github.com/energyapps/egallon). 
+
+**IMPORTANT: When editing the gh-pages branch of this repository, you will be editing the content that lives at energy.gov/egallon.**
 
 ## Background information
 Read the blogs if you're curious about how this came into being. The cms map itself is located [here](https://energy.gov/maps/egallon).
